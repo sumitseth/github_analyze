@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'github_analyze/cli'
+GithubAnalyze::Cli.start(ARGV)

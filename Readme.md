@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/georgedrummond/github_analyze.svg?branch=master)](https://travis-ci.org/georgedrummond/github_analyze)
+
 # GithubAnalyze
 
 This gem reports the most or least popular languages used in a GitHub organization.

@@ -57,7 +57,7 @@ RSpec.describe GithubAnalyze::Organization do
   describe '#least_common_languages' do
     it 'returns least common' do
       expect(organization.least_common_languages).to eq(
-        ['Ragel in Ruby Host', 'PowerShell', 'Scala', 'Clojure', 'Perl']
+        ['Clojure', 'Perl', 'PowerShell', 'Ragel in Ruby Host', 'Scala']
       )
     end
   end
@@ -72,22 +72,22 @@ RSpec.describe GithubAnalyze::Organization do
           'C',
           'Shell',
           'Objective-C',
-          'Python',
           'HTML',
-          'CoffeeScript',
-          'CSS',
-          'Java',
+          'Python',
           'C#',
-          'Swift',
+          'CSS',
+          'CoffeeScript',
+          'Java',
           'Puppet',
+          'Swift',
           'C++',
-          'TypeScript',
           'Haskell',
-          'Ragel in Ruby Host',
-          'PowerShell',
-          'Scala',
+          'TypeScript',
           'Clojure',
-          'Perl'
+          'Perl',
+          'PowerShell',
+          'Ragel in Ruby Host',
+          'Scala'
         ]
       )
     end

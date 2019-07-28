@@ -12,7 +12,7 @@ module GithubAnalyze
     end
 
     def ranked_languages
-      languages.sort_by { |k, v| -v }.map { |k, v| k }
+      languages.sort_by { |k, v| [-v, k] }.map { |k, v| k }
     end
 
     def most_common_languages

@@ -36,10 +36,24 @@ client = GithubAnalyze::Client.new(
 organization = client.organization(name: 'github')
 
 # Find out the most popular languages used in that organization
-organization.most_common_languages # => ['Ruby', 'JavaScript', 'Go', 'C', 'Shell']
+organization.most_common_languages 
+# => [
+#   'Ruby', 
+#   'JavaScript', 
+#   'Go', 
+#   'C', 
+#   'Shell'
+# ]
 
 # Find least common languages used in that organization
-organization.least_common_languages # => ['Ragel in Ruby Host', 'PowerShell', 'Scala', 'Clojure', 'Perl']
+organization.least_common_languages 
+# => [
+#   'Ragel in Ruby Host', 
+#   'PowerShell', 
+#   'Scala', 
+#   'Clojure', 
+#   'Perl'
+# ]
 
 organization.ranked_languages
 # => [

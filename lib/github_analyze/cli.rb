@@ -6,10 +6,15 @@ module GithubAnalyze
   class Cli < Thor
     desc 'stats ORGANIZATION', 'report language stats for said organization'
     def stats(organization)
-      client.organization(name: organization)
+      languages = []
+      languages << ['Rank', 'Language', 'Repo Count']
+      
+      client
+        .organization(name: organization)
         .ranked_languages
-        .each
-          .with_index { |language, i| puts "#{i + 1} - #{language}" }
+        .each.with_index { |l, i| languages << [i, l[0], l[1]] }
+        
+      print_table languages
     end
 
     desc 'csv ORGANIZATION ABSOLUTE_FILE_PATH','generate CSV of most common languages by repo count'

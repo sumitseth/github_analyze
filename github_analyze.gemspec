@@ -9,9 +9,10 @@ Gem::Specification.new do |spec|
   spec.email = %w[georgedrummond@gmail.com]
 
   spec.summary = 'Analyze GitHub organizations for language data'
-  spec.description = 'Analyze GitHub organizations for language data. Check documentation at https://github.com/georgedrummond/github_analyze'
+  spec.description =
+    'Analyze GitHub organizations for language data. Check documentation at https://github.com/georgedrummond/github_analyze'
   spec.homepage = 'https://github.com/georgedrummond/github_analyze'
-  spec.licenses = ['MIT']
+  spec.licenses = %w[MIT]
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

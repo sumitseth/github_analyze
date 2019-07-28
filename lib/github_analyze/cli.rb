@@ -41,7 +41,11 @@ module GithubAnalyze
           github_authentication_token: ENV['GITHUB_AUTHENTICATION_TOKEN']
         )
       else
-        raise 'You must set GITHUB_AUTHENTICATION_TOKEN environment variable'
+        say(
+          "You must set GITHUB_AUTHENTICATION_TOKEN environment variable\ne.g. GITHUB_AUTHENTICATION_TOKEN=token github_analyze #{ARGV.join(' ')}",
+          Thor::Shell::Color::RED
+        )
+        exit
       end
     end
   end

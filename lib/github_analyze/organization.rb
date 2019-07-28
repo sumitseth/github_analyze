@@ -12,15 +12,15 @@ module GithubAnalyze
     end
 
     def ranked_languages
-      languages.sort_by { |k, v| [-v, k] }.map { |k, v| k }
+      Hash[languages.to_a.sort_by { |k, v| [-v, k] }]
     end
 
     def most_common_languages
-      ranked_languages.first(5)
+      ranked_languages.to_a.first(5).collect(&:first)
     end
 
     def least_common_languages
-      ranked_languages.last(5)
+      ranked_languages.to_a.last(5).collect(&:first)
     end
 
     private

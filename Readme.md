@@ -36,36 +36,50 @@ client = GithubAnalyze::Client.new(
 organization = client.organization(name: 'github')
 
 # Find out the most popular languages used in that organization
-organization.most_common_languages # => ['Ruby', 'JavaScript', 'Go', 'C', 'Shell']
+organization.most_common_languages 
+# => [
+#   'Ruby', 
+#   'JavaScript', 
+#   'Go', 
+#   'C', 
+#   'Shell'
+# ]
 
 # Find least common languages used in that organization
-organization.least_common_languages # => ['Ragel in Ruby Host', 'PowerShell', 'Scala', 'Clojure', 'Perl']
+organization.least_common_languages 
+# => [
+#   'Ragel in Ruby Host', 
+#   'PowerShell', 
+#   'Scala', 
+#   'Clojure', 
+#   'Perl'
+# ]
 
 organization.ranked_languages
-# => [
-#   'Ruby',
-#   'JavaScript',
-#   'Go',
-#   'C',
-#   'Shell',
-#   'Objective-C',
-#   'HTML',
-#   'Python',
-#   'C#',
-#   'CSS',
-#   'CoffeeScript',
-#   'Java',
-#   'Puppet',
-#   'Swift',
-#   'C++',
-#   'Haskell',
-#   'TypeScript',
-#   'Clojure',
-#   'Perl',
-#   'PowerShell',
-#   'Ragel in Ruby Host',
-#   'Scala'
-# ]
+# => {
+#   'Ruby' => 98,
+#   'JavaScript' => 63,
+#   'Go' => 19,
+#   'C' => 17,
+#   'Shell' => 15,
+#   'Objective-C' => 10,
+#   'HTML' => 9,
+#   'Python' => 9,
+#   'C#' => 6,
+#   'CSS' => 6,
+#   'CoffeeScript' => 6,
+#   'Java' => 6,
+#   'Puppet' => 3,
+#   'Swift' => 3,
+#   'C++' => 2,
+#   'Haskell' => 2,
+#   'TypeScript' => 2,
+#   'Clojure' => 1,
+#   'Perl' => 1,
+#   'PowerShell' => 1,
+#   'Ragel in Ruby Host' => 1,
+#   'Scala' => 1
+# }
 ```
 
 ## Command Line

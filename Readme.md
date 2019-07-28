@@ -40,6 +40,32 @@ organization.most_common_languages # => ['Ruby', 'JavaScript', 'Go', 'C', 'Shell
 
 # Find least common languages used in that organization
 organization.least_common_languages # => ['Ragel in Ruby Host', 'PowerShell', 'Scala', 'Clojure', 'Perl']
+
+organization.ranked_languages
+# => [
+#   'Ruby',
+#   'JavaScript',
+#   'Go',
+#   'C',
+#   'Shell',
+#   'Objective-C',
+#   'HTML',
+#   'Python',
+#   'C#',
+#   'CSS',
+#   'CoffeeScript',
+#   'Java',
+#   'Puppet',
+#   'Swift',
+#   'C++',
+#   'Haskell',
+#   'TypeScript',
+#   'Clojure',
+#   'Perl',
+#   'PowerShell',
+#   'Ragel in Ruby Host',
+#   'Scala'
+# ]
 ```
 
 ## Command Line

@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/georgedrummond/github_analyze.svg?branch=master)](https://travis-ci.org/georgedrummond/github_analyze) [![Gem Version](https://badge.fury.io/rb/github_analyze.svg)](https://badge.fury.io/rb/github_analyze)
 
-# GithubAnalyze
+# github_analyze
 
 This gem reports the most or least popular languages used in a GitHub organization.
 
@@ -48,11 +48,11 @@ organization.most_common_languages
 # Find least common languages used in that organization
 organization.least_common_languages 
 # => [
-#   'Ragel in Ruby Host', 
-#   'PowerShell', 
-#   'Scala', 
 #   'Clojure', 
-#   'Perl'
+#   'Perl', 
+#   'PowerShell', 
+#   'Ragel in Ruby Host', 
+#   'Scala'
 # ]
 
 organization.ranked_languages

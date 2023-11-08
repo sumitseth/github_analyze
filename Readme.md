@@ -1,3 +1,4 @@
+
 [![Build Status](https://travis-ci.org/georgedrummond/github_analyze.svg?branch=master)](https://travis-ci.org/georgedrummond/github_analyze) [![Gem Version](https://badge.fury.io/rb/github_analyze.svg)](https://badge.fury.io/rb/github_analyze)
 
 # github_analyze

@@ -1,11 +1,12 @@
 repo_name: sumitseth/github_analyze
-report_id: 4f74f34a2632cadc95da32817a1f0c6b
+report_id: 6df406fc9e733a555af08e4278e2a53c
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-09T04:13:23+00:00'
+timestamp: '2024-03-05T21:36:03+00:00'
 requested_by: sumitseth
 provider: github
 branch: master
-detected_tools_count: 12
+detected_tools_count: 13
 tools:
 - name: Ruby
   description: A dynamic, interpreted, open source programming language with a focus
@@ -16,16 +17,20 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/989/ruby.png
+  detection_source_url: https://github.com/sumitseth/github_analyze
   detection_source: Repo Metadata
 - name: Bundler
-  description: 'A consistent environment for tracking and installing  gems and versions '
+  description: A consistent environment for tracking and installing  gems and versions
   website_url: http://bundler.io
   open_source: false
   hosted_saas: false
   category: Build, Test, Deploy
   sub_category: Front End Package Manager
   image_url: https://img.stackshare.io/service/2988/4e77LXIo_400x400.png
+  detection_source_url: https://github.com/sumitseth/github_analyze/blob/master/github_analyze.gemspec
   detection_source: github_analyze.gemspec
+  last_updated_by: George Drummond
+  last_updated_on: 2019-07-28 20:19:54.000000000 Z
 - name: Git
   description: Fast, scalable, distributed revision control system
   website_url: http://git-scm.com/
@@ -34,7 +39,22 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/sumitseth/github_analyze
   detection_source: Repo Metadata
+- name: Prettier
+  description: Prettier is an opinionated code formatter.
+  website_url: https://prettier.io/
+  version: 0.14.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/7035/default_66f265943abed56bcdbfca1c866a4261b1fbb063.jpg
+  detection_source_url: https://github.com/sumitseth/github_analyze/blob/master/Gemfile.lock
+  detection_source: github_analyze.gemspec
+  last_updated_by: George Drummond
+  last_updated_on: 2019-07-28 23:28:07.000000000 Z
 - name: RSpec
   description: Behaviour Driven Development for Ruby
   website_url: https://rspec.info/
@@ -45,8 +65,10 @@ tools:
   category: Build, Test, Deploy
   sub_category: Testing Frameworks
   image_url: https://img.stackshare.io/service/2539/logo.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/sumitseth/github_analyze/blob/master/Gemfile.lock
   detection_source: github_analyze.gemspec
+  last_updated_by: George Drummond
+  last_updated_on: 2019-07-28 20:19:54.000000000 Z
 - name: RubyGems
   description: Easily download, install, and use ruby software packages on your system
   website_url: https://rubygems.org/
@@ -55,7 +77,10 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/service/12795/5jL6-BA5_400x400.jpeg
+  detection_source_url: https://github.com/sumitseth/github_analyze/blob/master/github_analyze.gemspec
   detection_source: github_analyze.gemspec
+  last_updated_by: George Drummond
+  last_updated_on: 2019-07-28 20:19:54.000000000 Z
 - name: Travis CI
   description: A hosted continuous integration service for open source and private
     projects
@@ -65,7 +90,10 @@ tools:
   category: Build, Test, Deploy
   sub_category: Continuous Integration
   image_url: https://img.stackshare.io/service/460/Lu6cGu0z_400x400.png
+  detection_source_url: https://github.com/sumitseth/github_analyze/blob/master/.travis.yml
   detection_source: ".travis.yml"
+  last_updated_by: George Drummond
+  last_updated_on: 2019-07-28 20:19:54.000000000 Z
 - name: Shell
   description: A shell is a text-based terminal, used for manipulating programs and
     files. Shell scripts typically manage program execution.
@@ -75,6 +103,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source_url: https://github.com/sumitseth/github_analyze
   detection_source: Repo Metadata
 - name: pry
   description: An IRB alternative and runtime developer console
@@ -86,8 +115,10 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18815/default_f582e4648f4682adb72d2b201218cda7f8e894ac.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/sumitseth/github_analyze/blob/master/Gemfile.lock
   detection_source: github_analyze.gemspec
+  last_updated_by: George Drummond
+  last_updated_on: 2019-07-28 20:19:54.000000000 Z
 - name: rake
   description: Rake is a Make-like program implemented in Ruby
   package_url: https://rubygems.org/rake
@@ -98,8 +129,10 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18812/default_f582e4648f4682adb72d2b201218cda7f8e894ac.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/sumitseth/github_analyze/blob/master/Gemfile.lock
   detection_source: github_analyze.gemspec
+  last_updated_by: George Drummond
+  last_updated_on: 2019-07-28 20:19:54.000000000 Z
   vulnerabilities:
   - name: OS Command Injection in Rake
     cve_id: CVE-2020-8130
@@ -117,8 +150,10 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18827/default_fa0604c1b3b2c413c942b4fa310935704d314c2f.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/sumitseth/github_analyze/blob/master/Gemfile.lock
   detection_source: github_analyze.gemspec
+  last_updated_by: George Drummond
+  last_updated_on: 2019-07-28 23:28:07.000000000 Z
 - name: vcr
   description: Record your test suite's HTTP interactions and replay them during future
     test runs for fast
@@ -130,8 +165,10 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18842/default_49e8e438a279d3b7963273823890f9482ce83fb4.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/sumitseth/github_analyze/blob/master/Gemfile.lock
   detection_source: github_analyze.gemspec
+  last_updated_by: George Drummond
+  last_updated_on: 2019-07-28 20:19:54.000000000 Z
 - name: webmock
   description: WebMock allows stubbing HTTP requests and setting expectations on HTTP
     requests
@@ -143,5 +180,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18824/default_6564ae059af6c4ea7065fd2329370c7a05341cf8.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/sumitseth/github_analyze/blob/master/Gemfile.lock
   detection_source: github_analyze.gemspec
+  last_updated_by: George Drummond
+  last_updated_on: 2019-07-28 23:28:07.000000000 Z

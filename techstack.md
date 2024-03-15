@@ -34,7 +34,7 @@ Full tech stack [here](/techstack.md)
 # Tech Stack File
 ![](https://img.stackshare.io/repo.svg "repo") [sumitseth/github_analyze](https://github.com/sumitseth/github_analyze)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|13<br/>Tools used|03/05/24 <br/>Report generated|
+|13<br/>Tools used|03/15/24 <br/>Report generated|
 |------|------|
 </div>
 
